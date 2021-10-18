@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  /* background-color: gray; */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.12),
+      rgba(0, 0, 0, 0.53)
+    ),
+    url("/images/photographer.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  position: relative !important;
+  padding-bottom: 5em;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  margin: 0 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.logo span {
+  color: rgb(44, 22, 22);
+}
+
+.links {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.links li {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 1px solid rgb(44, 22, 22);
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background-color: rgba(44, 22, 22, 0.883);
+}
+
+li.active {
+  color: rgba(44, 22, 22, 0.883);
+}
+
+li.active:hover {
+  color: rgba(44, 22, 22, 0.883);
+  background: transparent;
+}
+
+.hero {
+  width: 60%;
+  padding: 2rem;
+  padding-left: 4rem;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 9rem;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 7rem;
+  font-family: sans-serif !important;
+  text-shadow: 1px 1px 4px gray;
+  font-weight: 600;
+  text-align: left;
+}
+
+button {
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  background-color: rgb(54, 28, 28);
+  font-weight: 800;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  transition: all 0.4s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  align-items: center;
+}
+
+button:hover {
+  background-color: 1px solid rgb(44, 22, 22);
+  transform: scale(1.05);
+}
